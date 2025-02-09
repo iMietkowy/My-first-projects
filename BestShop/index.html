@@ -38,7 +38,7 @@
                 <p class="opening_heading">Open shop on our platform and increase your sales</p>
                 <a href="#" class="btn_large btn">Open your shop</a>
             </div>
-            <img src="./assets/Background.png" alt="img_opening_site">
+            <img src="./assets/Background.png"  class="opening_img" alt="img_opening_site">
         </section>
 
         <section class="statistics">
@@ -115,50 +115,88 @@
                 </article>
             </div>
         </section>
-        <section class="pricing">
+        <section class="pricing container">
             <h2 class="priccing_list_title title">Pricing</h2>
             <div class="pricing_container">
-            <div class="pricing_list_box_basic">
-                <div class="pricing_type">Basic</div>
-                <div class="pricing_list_price basic">$0</div>
-                <ul class="pricing_list">
-                    <li class="pricing_list_contains">100 MB HDD</li>
-                    <li class="pricing_list_contains">1 Subdomain</li>
-                    <li class="pricing_list_contains">2 E-mails</li>
-                    <li class="pricing_list_not_contains">Two years license</li>
-                    <li class="pricing_list_not_contains">Full support</li>
-                    <a href="#" class="btn-pricing--basic btn-small">Begin</a>
-                </ul>
+                <div class="pricing_list_box_basic">
+                    <div class="pricing_type">Basic</div>
+                    <div class="pricing_list_price basic">$0</div>
+                    <ul class="pricing_list">
+                        <li class="pricing_list_contains">100 MB HDD</li>
+                        <li class="pricing_list_contains">1 Subdomain</li>
+                        <li class="pricing_list_contains">2 E-mails</li>
+                        <li class="pricing_list_not_contains">Two years license</li>
+                        <li class="pricing_list_not_contains">Full support</li>
+                        <a href="#" class="btn-pricing--basic btn-small">Begin</a>
+                    </ul>
+                </div>
+                <div class="pricing_list_box_professional">
+                    <div class="pricing_type">Professional</div>
+                    <div class="pricing_list_price professional">$25</div>
+                    <div class="pricing_limited">Limited offer</div>
+                    <ul class="pricing_list">
+                        <li class="pricing_list_contains">500 MB HDD</li>
+                        <li class="pricing_list_contains">2 Subdomains</li>
+                        <li class="pricing_list_contains">5 E-mails</li>
+                        <li class="pricing_list_contains">One year license</li>
+                        <li class="pricing_list_not_contains">Full support</li>
+                        <a href="#" class="btn-pricing--professional btn-small">Begin</a>
+                    </ul>
+                </div>
+                <div class="pricing_list_box_premium">
+                    <div class="pricing_type">Premium</div>
+                    <div class="pricing_list_price premium">$60</div>
+                    <div class="pricing_limited">Limited offer</div>
+                    <ul class="pricing_list">
+                        <li class="pricing_list_contains">2 GB HDD</li>
+                        <li class="pricing_list_contains">5 Subdomains</li>
+                        <li class="pricing_list_contains">20 E-mails</li>
+                        <li class="pricing_list_contains">Two years license</li>
+                        <li class="pricing_list_contains">Full support</li>
+                        <a href="#" class="btn-pricing--premium btn-small">Begin</a>
+                    </ul>
+                </div>
             </div>
-            <div class="pricing_list_box_professional">
-                <div class="pricing_type">Professional</div>
-                <div class="pricing_list_price professional">$25</div>
-                <div class="pricing_limited">Limited offer</div>
-                <ul class="pricing_list">
-                    <li class="pricing_list_contains">500 MB HDD</li>
-                    <li class="pricing_list_contains">2 Subdomains</li>
-                    <li class="pricing_list_contains">5 E-mails</li>
-                    <li class="pricing_list_contains">One year license</li>
-                    <li class="pricing_list_not_contains">Full support</li>
-                    <a href="#" class="btn-pricing--professional btn-small">Begin</a>
-                </ul>
+        </section>
+        <section class="contact container">
+            <div class="contact_column">
+                <h1 class="contact_title title">Any questions?</h1>
+                <p class="contact_discription">Leave your email address or call us!</p>
+                <div class="contact_box">
+                    <a href="mailto::info@bestshop.xyz" class="contact_email">info@bestshop.xyz</a>
+                    <a href="tel:123456789" class="contact_tel">123 456 789</a>
+                </div>
             </div>
-            <div class="pricing_list_box_premium">
-                <div class="pricing_type">Premium</div>
-                <div class="pricing_list_price premium">$60</div>
-                <div class="pricing_limited">Limited offer</div>
-                <ul class="pricing_list">
-                    <li class="pricing_list_contains">2 GB HDD</li>
-                    <li class="pricing_list_contains">5 Subdomains</li>
-                    <li class="pricing_list_contains">20 E-mails</li>
-                    <li class="pricing_list_contains">Two years license</li>
-                    <li class="pricing_list_contains">Full support</li>
-                    <a href="#" class="btn-pricing--premium btn-small">Begin</a>
-                </ul>
+            <div class="contact_column">
+                <form action="" class="contact_form">
+                    <label for="name" class="form_label">Name</label>
+                    <input type="text" id="name">
+                    <label for="email" class="form_label">E Mail</label>
+                    <input type="email" id="email">
+                    <label for="agree" class="checkbox">
+                        <input type="checkbox" id="agree">
+                        <span class="contact-agrement-check"></span>
+                        <p class="contact-agreement">I hereby give consent for my personal data included in my
+                            application to be processed for the purposes of the recruitment process under the European
+                            Parliament’s and Council of the European Union Regulation on the Protection of Natural
+                            Persons as of 27 April 2016, with regard to the processing of personal data and on the free
+                            movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+                    </label>
+                    <button type="submit" class="btn_sub">Send</button>
+                </form>
             </div>
-        </div>
         </section>
     </main>
-</body>
-
+    <footer class="footer">
+        <div class="footer_container container">
+            <div class="footer_lognav_box">
+                <span class="footer_logo">BestShop</span>
+                <span class="footer_copyright">&copy; 2019 BestShop LTD, All Rights Reserved</span>
+            </div>
+            <div class="footer_icons">
+                <a href="#"><img src="./assets/Twitter.svg" alt="twitter"></a>
+                <a href="#"><img src="./assets/Facebook.svg" alt="twitter"></a>
+            </div>
+        </div>
+    </footer>
 </html>
