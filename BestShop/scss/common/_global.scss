@@ -1,0 +1,37 @@
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1352px;
+	margin: 0 auto;
+
+	@media screen and (max-width: 1352px) {	
+		width: 100%;
+		padding: 0 15px;
+	}
+}
+
+body {
+	font-family: var(--primary-font);
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+a:active,
+a:focus {
+	outline: none;
+}
+
+.btn {
+	color: var(--color-white);
+}
+
+.title {
+	font-family: var(--secondary-font);
+	color: var(--color-black);
+}

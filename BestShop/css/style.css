@@ -646,6 +646,8 @@ input[type='email'] {
 	right: 0;
 }
 
+/* Footer */
+
 .footer {
 	background-color: var(--color-light-grey);
 	box-shadow: 0px -5px 40px #00000029;

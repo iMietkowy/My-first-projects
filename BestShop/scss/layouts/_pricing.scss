@@ -1,0 +1,152 @@
+
+.basic {
+	color: var(--color-redish);
+}
+
+.professional {
+	color: var(--color-primary);
+}
+
+.premium {
+	color: var(--color-green);
+}
+
+.pricing {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background-color: var(--color-white);
+	padding-top: 100px;
+	font-family: var(--primary-font);
+	flex-direction: column;
+}
+
+.pricing_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 57px;
+}
+
+.priccing_list_title {
+	font-size: 36px;
+}
+
+.pricing_list_box_basic,
+.pricing_list_box_professional,
+.pricing_list_box_premium {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 18px;
+	margin-top: 70px;
+	position: relative;
+}
+
+.pricing_list_box_basic {
+	border: 1px solid var(--color-redish);
+	width: 370px;
+}
+
+.pricing_list_box_professional {
+	border: 1px solid var(--color-primary);
+	box-shadow: 5px 10px 27px var(--color-primary-shadow);
+	width: 403px;
+	margin-top: 50px;
+}
+
+.pricing_list_box_premium {
+	border: 1px solid var(--color-green);
+	width: 370px;
+}
+
+.pricing_type {
+	font-family: var(--secondary-font);
+	font-weight: bold;
+	font-size: 20px;
+	color: #13253b;
+	margin-top: 34px;
+	margin-bottom: 14px;
+}
+
+.pricing_list_price {
+	font-size: 46px;
+}
+
+.pricing .pricing_list_box_basic .pricing_list_price {
+	margin-bottom: 69px;
+}
+
+.pricing_limited {
+	margin-top: 15px;
+	margin-bottom: 66px;
+	font-family: var(--secondary-font);
+	font-size: 12px;
+	font-weight: bold;
+	color: #13253b;
+}
+.pricing_list_box_premium .pricing_limited {
+	margin-bottom: 42px;
+}
+
+.pricing_list_contains {
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: var(--color-black);
+
+	&::before {
+		content: '';
+		background-image: url(../assets/Checkmark-1.svg);
+		display: inline-block;
+		height: 11px;
+		width: 11px;
+		margin-right: 10px;
+	}
+}
+
+.pricing_list_box_professional .pricing_list_contains {
+	margin-bottom: 25px;
+}
+
+.pricing_list_not_contains {
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: var(--color-black);
+
+	&::before {
+		content: '';
+		background-image: url(../assets/Close.svg);
+		display: inline-block;
+		height: 11px;
+		width: 11px;
+		margin-right: 10px;
+	}
+}
+
+.pricing_list li:last-of-type {
+	margin-bottom: 80px;
+}
+
+.btn-small {
+	color: var(--color-white);
+	text-decoration: none;
+	font-weight: bold;
+	padding: 16px 57px;
+	border-radius: 23px;
+	position: absolute;
+	bottom: -5%;
+	left: 30%;
+	cursor: pointer;
+}
+
+.btn-pricing--basic {
+	background-color: var(--color-redish);
+}
+
+.btn-pricing--professional {
+	background-color: var(--color-primary);
+}
+
+.btn-pricing--premium {
+	background-color: var(--color-green);
+}
