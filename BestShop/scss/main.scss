@@ -1,7 +1,9 @@
 @import 'common/reset';
 @import 'common/variables';
+@import 'common/mixins';
 @import 'common/global';
 @import 'layouts/header';
+@import 'layouts/opening';
 @import 'layouts/statistics';
 @import 'layouts/benefits';
 @import 'layouts/pricing';

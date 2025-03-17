@@ -1,4 +1,3 @@
-
 * {
 	box-sizing: border-box;
 }
@@ -7,14 +6,14 @@
 	max-width: 1352px;
 	margin: 0 auto;
 
-	@media screen and (max-width: 1352px) {	
+	@include tablet {
 		width: 100%;
 		padding: 0 15px;
 	}
 }
 
 body {
-	font-family: var(--primary-font);
+	font-family: $primary-font;
 }
 
 img {
@@ -28,10 +27,49 @@ a:focus {
 }
 
 .btn {
-	color: var(--color-white);
+	color: $color-white;
 }
 
 .title {
-	font-family: var(--secondary-font);
-	color: var(--color-black);
+	font-family: $secondary-font;
+	color: $color-black;
+}
+
+.statistics_title,
+.benefits_article_title {
+	font-size: 36px;
+	font-family: $secondary-font;
+	line-height: 35px;
+
+	@include mobile {
+		text-align: center;
+		padding: 0 20px;
+	}
+}
+
+
+// Color used for Pricing Section
+
+.basic {
+	color: $color-redish;
+}
+
+.professional {
+	color: $color-primary;
+}
+
+.premium {
+	color: $color-green;
+}
+
+.btn-pricing--basic {
+	background-color: $color-redish;
+}
+
+.btn-pricing--professional {
+	background-color: $color-primary;
+}
+
+.btn-pricing--premium {
+	background-color: $color-green;
 }

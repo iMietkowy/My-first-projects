@@ -22,11 +22,17 @@
         <div class="header_container container">
             <a href="#" class="header_logo">BestShop</a>
             <nav class="header_nav">
-                <ul class="header_menu">
-                    <li class="header_menu_el"><a href="#">Why us</a></li>
-                    <li class="header_menu_el"><a href="#">Benefits</a></li>
-                    <li class="header_menu_el"><a href="#">Prices</a></li>
-                    <li class="header_menu_el"><a href="#">Contact</a></li>
+                <input type="checkbox" class="menu__btn" id="menu__btn">
+                <label for="menu__btn" class="menu__toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="header_nav_menu">
+                    <li class="header_nav_menu_ele"><a href="#why_us" class="nav_links">Why us</a></li>
+                    <li class="header_nav_menu_ele"><a href="#benefits" class="nav_links">Benefits</a></li>
+                    <li class="header_nav_menu_ele"><a href="#prices" class="nav_links">Prices</a></li>
+                    <li class="header_nav_menu_ele"><a href="#contact" class="nav_links">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,14 +41,14 @@
     <main>
         <section class="opening">
             <div class="opening_content">
-                <h1 class="opening_title title">Sell More!</h1>
-                <p class="opening_heading">Open shop on our platform and increase your sales</p>
+                <h1 class="opening_content_title title">Sell More!</h1>
+                <p class="opening_content_heading">Open shop on our platform and increase your sales</p>
                 <a href="#" class="btn_large btn">Open your shop</a>
             </div>
             <img src="./assets/Background.png" class="opening_img" alt="img_opening_site">
         </section>
 
-        <section class="statistics">
+        <section class="statistics" id="why_us">
             <div class="statistics_container container">
                 <h2 class="statistics_title title">The most popular sales platform in country</h2>
                 <div class="statistics_content">
@@ -72,29 +78,31 @@
                 </div>
             </div>
         </section>
-        <section class="benefits">
+        <section class="benefits" id="benefits">
             <div class="benefits_container container">
                 <article class="benefits_article">
-                    <div class="benefits_article_text">
-                        <h2 class="benefits_title title">Be always first</h2>
+                    <div class="benefits_article_box">
+                        <h2 class="benefits_article_title title">Be always first</h2>
                         <p class="benefits_article_discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do
                             eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     </div>
-                    <div class="benefits_img_container">
+                    <div class="benefits_daimond_img">
                         <img src="./assets/Macbook.png" class="laptop_img" alt="Macbook">
+                        <div class="daimond"></div>
                     </div>
                 </article>
 
                 <article class="benefits_article">
-                    <div class="benefits_article_text">
-                        <h2 class="benefits_title title">Your shop is <br> where you are!</h2>
+                    <div class="benefits_article_box">
+                        <h2 class="benefits_article_title title">Your shop is <br> where you are!</h2>
                         <p class="benefits_article_discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                         </p>
                     </div>
                     <div class="benefits_circle-img">
+                        <div class="circle"></div>
                         <img src="./assets/iPhone.png" class="selfphone_img" alt="iPhone">
                     </div>
 
@@ -102,8 +110,8 @@
 
                 <article class="benefits_article_separate">
                     <div class="benefits_container container">
-                        <div class="benefits_article_text">
-                            <h2 class="benefits_title title">Increase recognition <br> your brand!</h2>
+                        <div class="benefits_article_box">
+                            <h2 class="benefits_article_title title">Increase recognition <br> your brand!</h2>
                             <p class="benefits_article_discription">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -111,17 +119,20 @@
                         <div class="benefits_square_contener">
                             <div class="benefits_square_img">
                                 <img src="./assets/Trumpet.png" class="trumpet_img" alt="Trumpet">
+
                             </div>
                         </div>
                 </article>
             </div>
         </section>
-        <section class="pricing container">
-            <h2 class="priccing_list_title title">Pricing</h2>
+        <section class="pricing container" id="prices">
+            <h2 class="pricing_list_title title">Pricing</h2>
             <div class="pricing_container">
                 <div class="pricing_list_box_basic">
-                    <div class="pricing_type">Basic</div>
-                    <div class="pricing_list_price basic">$0</div>
+                    <div class="box">
+                        <div class="pricing_type">Basic</div>
+                        <div class="pricing_list_price basic">$0</div>
+                    </div>
                     <ul class="pricing_list">
                         <li class="pricing_list_contains">100 MB HDD</li>
                         <li class="pricing_list_contains">1 Subdomain</li>
@@ -132,9 +143,11 @@
                     </ul>
                 </div>
                 <div class="pricing_list_box_professional">
-                    <div class="pricing_type">Professional</div>
-                    <div class="pricing_list_price professional">$25</div>
-                    <div class="pricing_limited">Limited offer</div>
+                    <div class="box">
+                        <div class="pricing_type">Professional</div>
+                        <div class="pricing_list_price professional">$25</div>
+                        <div class="pricing_limited">Limited offer</div>
+                    </div>
                     <ul class="pricing_list">
                         <li class="pricing_list_contains">500 MB HDD</li>
                         <li class="pricing_list_contains">2 Subdomains</li>
@@ -145,9 +158,11 @@
                     </ul>
                 </div>
                 <div class="pricing_list_box_premium">
-                    <div class="pricing_type">Premium</div>
-                    <div class="pricing_list_price premium">$60</div>
-                    <div class="pricing_limited">Limited offer</div>
+                    <div class="box">
+                        <div class="pricing_type">Premium</div>
+                        <div class="pricing_list_price premium">$60</div>
+                        <div class="pricing_limited">Limited offer</div>
+                    </div>
                     <ul class="pricing_list">
                         <li class="pricing_list_contains">2 GB HDD</li>
                         <li class="pricing_list_contains">5 Subdomains</li>
@@ -159,7 +174,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact container">
+        <section class="contact container" id="contact">
             <div class="contact_column">
                 <h1 class="contact_title title">Any questions?</h1>
                 <p class="contact_discription">Leave your email address or call us!</p>
